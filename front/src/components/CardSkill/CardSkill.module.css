@@ -1,0 +1,17 @@
+.cardSkillContainer{
+    height: 220px;
+    width: 180px;
+    background-color: #1C252F;
+    border-radius: 12px;
+    color: #D5FF40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img{
+        height: 100px;
+    }
+    h4{
+        margin-top: 20px;
+    }
+}

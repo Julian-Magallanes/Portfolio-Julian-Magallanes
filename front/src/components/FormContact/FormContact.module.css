@@ -1,0 +1,160 @@
+
+.mainHomeContainer{
+    display: flex;
+    justify-content: center;
+    
+}
+.mainHomeBlur{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+}
+.FormTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px 0px 60px;
+    span{
+        width: 40px; 
+    };
+    img{
+        width: 40px;  
+    }
+}
+.FormContainer{
+    background-color: #1C252F;
+    position: fixed;
+    width: 660px;
+    height: 540px;
+    border-radius: 16px;
+    color: #D5FF40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    margin: 200px;
+    h1{
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+.FormSection{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    label{
+        font-size: 16px;
+        font-weight: 200;
+        margin-bottom: 10px;
+    }
+    input{
+        width: 560px;
+        height: 30px;
+        background: none;
+        border: #D5FF40 solid 2px;
+        border-radius: 12px;
+    }
+}
+.FormSectionSubmit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 10px 20px 10px;
+    input{
+        width: 260px;
+        height: 30px;
+        background: none;
+        background-color: #D5FF40;
+        border-radius: 12px;
+    }
+}
+
+.FormSectionRrss{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    p{
+        font-size: 16px;
+        font-weight: 200;
+        margin-right: 10px;
+    }
+    img{
+        margin: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
