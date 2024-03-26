@@ -4,7 +4,7 @@ import CardSkill from "../../components/CardSkill/CardSkill";
 
 const Skills = () => {
     return(
-    <div className={style.skillsContainer}>
+    <div className={style.skillsContainer} id="Skills">
         <div>
             <h1>Tecnologias Conocidas</h1>
             <p>Estas son utilizadas en todos los proyectos elaborados</p>

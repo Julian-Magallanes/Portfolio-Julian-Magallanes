@@ -5,7 +5,7 @@ import imageAvion from "../../assets/avion2.png"
 import imageMetas from "../../assets/metas.png"
 const AboutMe = () => {
     return(
-    <div className={style.aboutMeContainer}>
+    <div className={style.aboutMeContainer} id="AboutMe">
         <div className={style.aboutMeSection1}>
             <img src={imageMontaint} alt="imageMontaint" />
             <p>

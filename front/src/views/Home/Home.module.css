@@ -5,4 +5,6 @@
     justify-content: center;
     height: 100vh;
     background-color: #D5FF40;
+    scroll-snap-align: start;
+
 }

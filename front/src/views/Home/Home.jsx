@@ -4,7 +4,7 @@ import MainHome from "../../components/MainHome/MainHome";
 
 const Home = () => {
     return(
-    <div className={style.homeContainer}>
+    <div className={style.homeContainer} id="Home">
         <MainHome/>
     </div>
     )

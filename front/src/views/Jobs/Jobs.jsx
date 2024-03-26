@@ -4,7 +4,7 @@ import CardJobs from "../../components/CardJobs/CardJobs";
 
 const Jobs = () => {
     return(
-    <div className={style.jobsContainer}>
+    <div className={style.jobsContainer} id="Jobs">
         <CardJobs/>
     </div>
     )

@@ -3,7 +3,7 @@ import style from "./Education.module.css"
 
 const Education = () => {
     return(
-    <div className={style.educationContainer}>
+    <div className={style.educationContainer} id="Education">
         <div className={style.education}>
             <div className={style.educationCardLeft}>
                 <h4>
