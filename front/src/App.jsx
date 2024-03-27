@@ -11,6 +11,7 @@ import Skills from "./views/Skills/Skills";
 import { Route, Routes } from "react-router-dom";
 import FullPage from '@fullpage/react-fullpage';
 import ReactFullpage from '@fullpage/react-fullpage';
+
 function App() {
   
   return (
@@ -21,14 +22,12 @@ function App() {
         <Route path="/Contact" element={<FormContact/>}/>
       </Routes>
       
-      <div className="container">
         <Home />
         <AboutMe />
         <Jobs/>
 
         <Education/>
         <Skills/>
-      </div>
     </div>
   )
 }

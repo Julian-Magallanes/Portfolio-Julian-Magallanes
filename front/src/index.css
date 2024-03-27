@@ -43,9 +43,19 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a.active {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 2px solid #1C252F;
+}
 
 button {
   border: 0;
   outline: 0;
   cursor: pointer;
+  
+}
+p{
+  text-decoration: none;
+  color: inherit;
 }

@@ -1,6 +1,6 @@
 const mongoose = require ("mongoose")
 
-const moviesSchema = new mongoose.Schema ({
+const jobsSchema = new mongoose.Schema ({
     title: {
         type:String,
         required: true,
@@ -12,5 +12,5 @@ const moviesSchema = new mongoose.Schema ({
     skills: [String],
     urlImage: String,
 })
-const Jobs = mongoose.model("Jobs", moviesSchema)
+const Jobs = mongoose.model("Jobs", jobsSchema)
 module.exports = Jobs

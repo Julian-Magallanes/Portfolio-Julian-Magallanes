@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./CardSkill.module.css"
-import imageHtml from "../../assets/html-logo.png"
-
-const CardSkill = () => {
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+const CardSkill = (props) => {
+    const {title,urlImage} = props.tecnology
     return(
     <div className={style.cardSkillContainer}>
-        <img src={imageHtml} alt="imageHtml" />
-        <h4>Html</h4>
+        <img src={urlImage} alt="imageHtml" />
+        <h4>{title}</h4>
     </div>
     )
 }

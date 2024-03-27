@@ -5,9 +5,9 @@ module.exports = {
         const jobs = await Jobs.find();
         return jobs
     },
-    /*postJobs: async (movie) => {
-        const newMovie = new Movies(movie)
-        const savedMovie = await newMovie.save();
-        return savedMovie;
+    /*postJobs: async (jobs) => {
+        const newJobs = new Movies(jobs)
+        const savedJobs = await newJobs.save();
+        return savedJobs;
     }*/
 }

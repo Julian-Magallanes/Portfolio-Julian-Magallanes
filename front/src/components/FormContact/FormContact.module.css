@@ -56,11 +56,25 @@
     input{
         width: 560px;
         height: 30px;
+        background: #1C252F;
+        border: #D5FF40 solid 2px;
+        border-radius: 12px;
+        padding:0px 12px 0px 12px;
+        background-color: #1C252F;
+        color: #D5FF40;
+    }
+    textarea{
+        width: 560px;
+        height: 80px;
         background: none;
         border: #D5FF40 solid 2px;
         border-radius: 12px;
+        color: #D5FF40;
+        padding:0px 12px 0px 12px;
     }
+    
 }
+
 .FormSectionSubmit{
     display: flex;
     flex-direction: row;

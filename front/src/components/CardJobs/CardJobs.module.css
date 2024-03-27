@@ -1,8 +1,12 @@
+.cardJobsContainer{
+    height: 360px;
+}
+
 .cardJobsImage{
-    background-color: gray;
     width: 290px;
     height: 200px;
     border-radius: 12px 12px 0px 0px ;
+    object-fit: cover;
 }
 
 .cardJobsText{
@@ -11,25 +15,34 @@
     background-color: #1C252F;
     border-radius: 0px 0px 12px 12px ;
     color: #D5FF40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
     h4{
+        margin: 4px;
         font-size: 20px;
         text-align: center;
-        padding: 20px;
+        font-weight: 600;
+    }
+    h6{
+        font-size: 16px;
+        text-align: center;
+        font-weight: 400;
     }
     p{
-        font-size: 20px;
+        font-size: 14px;
         text-align: center;
+        width: 80%;
+        font-weight: 200;
     }
     
 }
 .cardJobsTextImage{
-    text-align: end;
     margin: 5px;
     img{
         height: 28px;
         width: 28px;
         margin: 5px;
-        text-align: end;
     }
 }
