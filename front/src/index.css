@@ -36,9 +36,6 @@ img {
   height: auto;
 }
 
-/* Otros estilos comunes a reiniciar según sea necesario */
-/* Ejemplo: a, button, etc. */
-
 a {
   text-decoration: none;
   color: inherit;
@@ -61,4 +58,24 @@ button {
 p{
   text-decoration: none;
   color: inherit;
+}
+#autodidacta{
+  position: absolute;
+  right: 28rem;
+  top: calc(300vh + 20rem);
+}
+#henry{
+  position: absolute;
+  right: 72rem;
+  top: calc(300vh + 20rem);
+}
+#coderhause{
+  position: absolute;
+  right: 52rem;
+  top: calc(300vh + 36rem);
+}
+#universidad{
+  position: absolute;
+  right: 76rem;
+  top: calc(300vh + 50rem);
 }
