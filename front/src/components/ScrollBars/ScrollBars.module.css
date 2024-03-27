@@ -13,7 +13,7 @@
     width: 35px;
     height: 3px;
     background-color: #1C252F;
-    margin-top: 20px;
+
 }
 .scrollBarsY{
     height: 360px;
@@ -29,3 +29,4 @@
         width: 96px;
     }
 }
+a{color: blueviolet;}

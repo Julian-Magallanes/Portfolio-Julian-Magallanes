@@ -2,15 +2,51 @@ import React from "react";
 import style from "./Navbar.module.css"
 import ButtonContact from "../ButtonContact/ButtonContact";
 import {Link} from "react-scroll"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
     const [click, setClick] = useState(false)
 
     const handleSetActive = () => setClick(false)
 
+    const [textColor, setTextColor] = useState('#1C252F'); // Estado para el color del texto
+    const [borderColor, setBorderColor] = useState('#1C252F')
+  useEffect(() => {
+    // Función para manejar el evento de desplazamiento
+    const handleScroll = () => {
+      // Obtener la posición vertical actual de la página
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      // Cambiar el color del texto basado en la posición vertical
+      if (scrollPosition < windowHeight) {
+        setTextColor("#1C252F");
+        setBorderColor("#1C252F");
+      } else if (scrollPosition < 2 * windowHeight) {
+        setTextColor("#D5FF40");
+        setBorderColor("#D5FF40");
+      } else if (scrollPosition < 3 * windowHeight) {
+        setTextColor("#1C252F");
+        setBorderColor("#1C252F");
+      } else if (scrollPosition < 4 * windowHeight) {
+        setTextColor("#D5FF40");
+        setBorderColor("#D5FF40");
+      } else {
+        setTextColor("#1C252F");
+        setBorderColor("#1C252F");
+      }
+    };
+
+    // Agregar un listener para el evento de desplazamiento
+    window.addEventListener('scroll', handleScroll);
+
+    // Limpiar el listener cuando el componente se desmonta
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
     return(
-    <div className={style.nabvar_Container}>
+    <div className={style.nabvar_Container} style={{ color: textColor, border: borderColor }}>
         <div className={style.nabvar_ContainerSep}></div>
         <ul className={style.nabvar_ContainerList}>
             <li>

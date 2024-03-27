@@ -2,9 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 18px;
     height: 30px;
-    width: 152px;
+    padding: 0px 40px 0px 40px;
     background-color: #1C252F;
     color: #D5FF40;
     border-radius: 12px;

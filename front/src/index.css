@@ -46,7 +46,10 @@ a {
 a.active {
   text-decoration: none;
   color: inherit;
-  border-bottom: 2px solid #1C252F;
+  border: 2px solid ;
+  border-radius: 12px;
+  padding: 0px 40px 0px 40px;
+  font-weight: 600;
 }
 
 button {
