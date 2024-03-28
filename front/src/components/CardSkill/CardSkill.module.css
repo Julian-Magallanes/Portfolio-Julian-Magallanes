@@ -9,10 +9,10 @@
     align-items: center;
     justify-content: center;
     margin: 20px;
-    img{
-        height: 100px;
-    }
-    h4{
+}
+.cardSkillContainer img{
+    height: 100px;
+}
+.cardSkillContainer h4{
         margin-top: 20px;
-    }
 }

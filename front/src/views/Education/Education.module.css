@@ -8,18 +8,17 @@
         width: 70rem;
     }
 }
-.education{
 
-    h4{
-        font-size: 20px;
-        font-weight: 800;
-    }
-    h6{
-        font-size: 16px;
-        font-weight: 400;
-        margin: 8px 0px 0px 0px;
-    }
-    a{
+.education h4{
+    font-size: 20px;
+    font-weight: 800;
+}
+.education h6{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 8px 0px 0px 0px;
+}
+.education a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,22 +31,22 @@
     border: #D5FF40 solid 3px;
     border-radius: 12px;
     margin: 8px 0px 0px 0px;
-    }
+}
     
-    button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 16px;
-        height: 30px;
-        width: 30px;
-        background-color: none;
-        background: none;
-        color: #D5FF40;
-        border: #D5FF40 solid 3px;
-        border-radius: 12px;
-        margin: 8px 0px 0px 0px;
-        }
+.education button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+    background-color: none;
+    background: none;
+    color: #D5FF40;
+    border: #D5FF40 solid 3px;
+    border-radius: 12px;
+    margin: 8px 0px 0px 0px;
+
 }
 
 .educationCardLeft{

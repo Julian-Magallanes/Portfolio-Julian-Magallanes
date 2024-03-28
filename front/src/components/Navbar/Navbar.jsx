@@ -9,8 +9,8 @@ const Navbar = () => {
 
     const handleSetActive = () => setClick(false)
 
-    const [textColor, setTextColor] = useState('#1C252F'); // Estado para el color del texto
-    const [borderColor, setBorderColor] = useState('#1C252F')
+    const [color, setColor] = useState('#1C252F'); // Estado para el color del texto
+    const [colorInverse, setColorInverse] = useState('#D5FF40');
   useEffect(() => {
     // Función para manejar el evento de desplazamiento
     const handleScroll = () => {
@@ -19,20 +19,23 @@ const Navbar = () => {
       const windowHeight = window.innerHeight;
       // Cambiar el color del texto basado en la posición vertical
       if (scrollPosition < windowHeight) {
-        setTextColor("#1C252F");
-        setBorderColor("#1C252F");
+        setColor("#1C252F");
+        setColorInverse("#D5FF40");
+
       } else if (scrollPosition < 2 * windowHeight) {
-        setTextColor("#D5FF40");
-        setBorderColor("#D5FF40");
+        setColor("#D5FF40");
+        setColorInverse("#1C252F");
       } else if (scrollPosition < 3 * windowHeight) {
-        setTextColor("#1C252F");
-        setBorderColor("#1C252F");
+        setColor("#1C252F");
+        setColorInverse("#D5FF40");
+
       } else if (scrollPosition < 4 * windowHeight) {
-        setTextColor("#D5FF40");
-        setBorderColor("#D5FF40");
+        setColor("#D5FF40");
+        setColorInverse("#1C252F");
       } else {
-        setTextColor("#1C252F");
-        setBorderColor("#1C252F");
+        setColor("#1C252F");
+        setColorInverse("#D5FF40");
+
       }
     };
 
@@ -51,14 +54,14 @@ const Navbar = () => {
       setMenuAnimation(!menuAnimation);
     };
     return(
-    <div className={style.nabvar_Container} style={{ color: textColor, border: borderColor }}>
+    <div className={style.nabvar_Container} style={{ color: color, border: color }}>
         <div className={style.nabvar_ContainerSep}></div>
         <div className={style.ToggleIcon} onClick={() => toggleDropdown()}>
-            <div className={`${style.NavbarMenuIcon1} ${menuAnimation ? style.Animation : ''}`} ></div>
-            <div className={`${style.NavbarMenuIcon2} ${menuAnimation ? style.Animation : ''}`} ></div>
-            <div className={`${style.NavbarMenuIcon3} ${menuAnimation ? style.Animation : ''}`}></div>
+            <div className={`${style.NavbarMenuIcon1} ${menuAnimation ? style.Animation : ''}`} style={{ background: menuAnimation ? colorInverse : color }}></div>
+            <div className={`${style.NavbarMenuIcon2} ${menuAnimation ? style.Animation : ''}`} style={{ background: color }}></div>
+            <div className={`${style.NavbarMenuIcon3} ${menuAnimation ? style.Animation : ''}`} style={{ background: menuAnimation ? colorInverse : color }}></div>
         </div>
-        <ul className={`${style.nabvar_ContainerList} ${dropdownVisible ? style.Visible : ''}`}>
+        <ul className={`${style.nabvar_ContainerList} ${dropdownVisible ? style.Visible : ''}`} style={{  ...(window.innerWidth <= 420 && { color: colorInverse, background: color }) }}>
           
             <li>
                 <Link 
@@ -118,7 +121,7 @@ const Navbar = () => {
             </li>
         </ul>
                 
-        <ButtonContact/>
+        <ButtonContact  />
     </div>
     )
 }

@@ -5,7 +5,7 @@ const CardSkill = (props) => {
     const {title,urlImage} = props.tecnology
     return(
     <div className={style.cardSkillContainer}>
-        <img src={urlImage} alt="imageHtml" />
+        <img src={urlImage} alt="imageHtml" loading="lazy" />
         <h4>{title}</h4>
     </div>
     )

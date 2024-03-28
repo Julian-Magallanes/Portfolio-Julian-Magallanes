@@ -82,11 +82,27 @@ p{
 }
 #coderhause{
   position: absolute;
-  right: 44rem;
-  top: calc(300vh + 28rem);
+  right: 44em;
+  top: calc(300vh + 28em);
 }
 #universidad{
   position: absolute;
-  right: 64rem;
+  right: 64em;
   top: calc(300vh + 44rem);
 }
+.swiffy-slider{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  width: 150vh;
+}
+.slider-container{
+  height: 320px;
+  width: 100%;
+}
+.slider-nav{
+  margin: -60px;
+}
+
+

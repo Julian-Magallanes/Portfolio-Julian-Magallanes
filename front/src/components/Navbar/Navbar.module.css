@@ -49,21 +49,22 @@
     .nabvar_ContainerList{
         flex-direction: column;
         align-items: center;
-        
     }
     .nabvar_ContainerSep{
         display: none;
     
     }
     .nabvar_Container{
-        padding: 20px 20px 0px 20px;
+        padding: 20px 30px 0px 20px;
+        display: flex;
     }
     .ToggleIcon{
         display: flex;
         flex-direction: column;
+
     }
     .NavbarMenuIcon1{
-        margin-left: 10px;
+        margin-top: 6px;
         margin-bottom: 6px;
         width: 40px;
         height: 3px;
@@ -78,7 +79,6 @@
     }
     
     .NavbarMenuIcon2{
-        margin-left: 10px;
         margin-bottom: 8px;
         width: 40px;
         height: 3px;
@@ -90,7 +90,6 @@
         display: none;
     }
     .NavbarMenuIcon3{
-        margin-left: 10px;
         margin-bottom: 8px;
         width: 40px;
         height: 3px;
@@ -112,6 +111,7 @@
         display: none;
         text-align: end;
         font-size: 24px;
+        
     }
     
     .nabvar_ContainerList.Visible {
@@ -123,12 +123,16 @@
         right: 0;
         top: 0;
         z-index: 1;
+        background-color: white;
+        width: 100%;
+        height: 320px;
     }
     
     .nabvar_ContainerList li {
         position: relative;
         top: 60px;
         margin-bottom: 20px;
+        z-index: 3;
     }
     
     .nabvar_ContainerList li :hover ul {

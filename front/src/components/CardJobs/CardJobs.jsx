@@ -8,8 +8,9 @@ const CardJobs = (props) => {
     
     return(
     <div className={style.cardJobsContainer}>
-        <img src={urlImage} alt="imageJobs" className={style.cardJobsImage}/>
-
+        <div className={style.cardJobsImage}>
+            <img src={urlImage} alt="imageJobs" />
+        </div>
         <div className={style.cardJobsText}> 
             <h4>{title}</h4>
             <h6>{description}</h6>
