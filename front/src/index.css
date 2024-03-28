@@ -1,8 +1,15 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
 }
-
+html::-webkit-scrollbar{
+  display: none;
+ }
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -48,7 +55,11 @@ a.active {
   padding: 0px 40px 0px 40px;
   font-weight: 600;
 }
-
+@media (max-width: 768px){
+  a.active {
+    padding: 0px 20px 0px 20px;
+  }
+}
 button {
   border: 0;
   outline: 0;
@@ -61,21 +72,21 @@ p{
 }
 #autodidacta{
   position: absolute;
-  right: 28rem;
+  right: 24rem;
   top: calc(300vh + 20rem);
 }
 #henry{
   position: absolute;
-  right: 72rem;
-  top: calc(300vh + 20rem);
+  right: 62rem;
+  top: calc(300vh + 16rem);
 }
 #coderhause{
   position: absolute;
-  right: 52rem;
-  top: calc(300vh + 36rem);
+  right: 44rem;
+  top: calc(300vh + 28rem);
 }
 #universidad{
   position: absolute;
-  right: 76rem;
-  top: calc(300vh + 50rem);
+  right: 64rem;
+  top: calc(300vh + 44rem);
 }

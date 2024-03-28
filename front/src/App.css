@@ -2,3 +2,10 @@
   font-family: "Inter", sans-serif;
   
 }
+.container-app{
+  scroll-behavior: smooth;
+}
+.container-app section{
+  height: 100vh;
+  scroll-snap-align: center;
+}

@@ -21,13 +21,13 @@ function App() {
       <Routes>
         <Route path="/Contact" element={<FormContact/>}/>
       </Routes>
-      
-        <Home />
-        <AboutMe />
-        <Jobs/>
-
-        <Education/>
-        <Skills/>
+      <div className="container-app">
+        <section><Home /></section>
+        <section><AboutMe /></section>
+        <section><Jobs/></section>
+        <section><Education/></section>
+        <section><Skills/></section>
+      </div>
     </div>
   )
 }

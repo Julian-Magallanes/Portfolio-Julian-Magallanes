@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./Education.module.css"
-
+import imageEducation from "../../assets/Group.png"
 const Education = () => {
     const [deploy, setDeploy] = useState(false)
 
@@ -16,6 +16,7 @@ const Education = () => {
     }
     return(
     <div className={style.educationContainer} id="Education">
+        <img src={imageEducation} alt="imageEducation" />
         <div className={style.education}>
             <div className={style.educationCardLeft} id="universidad">
                 <h4>

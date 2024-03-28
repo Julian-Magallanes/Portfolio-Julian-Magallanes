@@ -12,15 +12,135 @@
     height: 38px;
 
 }
-
+.ToggleIcon{
+    display: none;
+}
 .nabvar_ContainerList{
     display: flex;
     flex-direction: row;
-    li{
+    
+}
+.nabvar_ContainerList li{
         font-size: 20px;
         font-weight: 400;
         margin: 0px 20px 0px 20px;
         cursor: pointer;
+}
+@media (max-width: 768px){
+    .nabvar_ContainerList li{
+        font-size: 15px;
+        margin: 0px 10px 0px 10px;
+    }
+    .nabvar_ContainerSep{
+        width: 0px;
+        height: 38px;
+    
+    }
+    .nabvar_Container{
+        padding: 40px 40px 0px 40px;
+    }
+}
+@media (max-width: 420px){
+    .nabvar_Container{
+        flex-direction: row-reverse;
+        align-items: end;
+        align-items: center;
+    }
+    .nabvar_ContainerList{
+        flex-direction: column;
+        align-items: center;
         
+    }
+    .nabvar_ContainerSep{
+        display: none;
+    
+    }
+    .nabvar_Container{
+        padding: 20px 20px 0px 20px;
+    }
+    .ToggleIcon{
+        display: flex;
+        flex-direction: column;
+    }
+    .NavbarMenuIcon1{
+        margin-left: 10px;
+        margin-bottom: 6px;
+        width: 40px;
+        height: 3px;
+        background-color:#1c252F ;
+        transition: 0.2s;
+        z-index: 2;
+    }
+    .NavbarMenuIcon1.Animation {
+        transform: rotateZ(45deg);
+        top: 5px;
+        position: relative;
+    }
+    
+    .NavbarMenuIcon2{
+        margin-left: 10px;
+        margin-bottom: 8px;
+        width: 40px;
+        height: 3px;
+        background-color:#1c252F ;
+        z-index: 2;
+        
+    }
+    .NavbarMenuIcon2.Animation {
+        display: none;
+    }
+    .NavbarMenuIcon3{
+        margin-left: 10px;
+        margin-bottom: 8px;
+        width: 40px;
+        height: 3px;
+        background-color:#1c252F ;
+        transition: 0.2s;
+        z-index: 2;
+        
+    }
+    .NavbarMenuIcon3.Animation {
+        top: -4px;
+        position: relative;
+        transform: rotateZ(-45deg)
+    }
+    .nabvar_ContainerList {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        display: none;
+        text-align: end;
+        font-size: 24px;
+    }
+    
+    .nabvar_ContainerList.Visible {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right:  40px;
+        padding: 20px;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+    
+    .nabvar_ContainerList li {
+        position: relative;
+        top: 60px;
+        margin-bottom: 20px;
+    }
+    
+    .nabvar_ContainerList li :hover ul {
+        display: block;
+    }
+    .nabvar_ContainerList li {
+        position: relative;
+        top: 60px;
+        margin-bottom: 20px;
+    }
+    
+    .nabvar_ContainerList li :hover ul {
+        display: block;
     }
 }

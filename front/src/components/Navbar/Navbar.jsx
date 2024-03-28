@@ -44,11 +44,22 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [menuAnimation, setMenuAnimation] = useState(false);
+  const toggleDropdown = () => {
+      setDropdownVisible(!dropdownVisible);
+      setMenuAnimation(!menuAnimation);
+    };
     return(
     <div className={style.nabvar_Container} style={{ color: textColor, border: borderColor }}>
         <div className={style.nabvar_ContainerSep}></div>
-        <ul className={style.nabvar_ContainerList}>
+        <div className={style.ToggleIcon} onClick={() => toggleDropdown()}>
+            <div className={`${style.NavbarMenuIcon1} ${menuAnimation ? style.Animation : ''}`} ></div>
+            <div className={`${style.NavbarMenuIcon2} ${menuAnimation ? style.Animation : ''}`} ></div>
+            <div className={`${style.NavbarMenuIcon3} ${menuAnimation ? style.Animation : ''}`}></div>
+        </div>
+        <ul className={`${style.nabvar_ContainerList} ${dropdownVisible ? style.Visible : ''}`}>
+          
             <li>
                 <Link 
                     to="Home" 

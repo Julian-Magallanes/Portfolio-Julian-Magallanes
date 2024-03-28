@@ -30,3 +30,9 @@
     }
 }
 a{color: blueviolet;}
+
+@media (max-width: 420px){
+    .scrollContainer{
+        display: none;
+    }
+}

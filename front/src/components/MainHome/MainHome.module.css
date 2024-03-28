@@ -6,23 +6,24 @@
 
 .mainHome_ContainerDescription{
     margin: 40px;
+    height: 340px;
+    width: 620px;
 }
 .mainHome_ContainerTitles{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    h1{
-        font-size: 46px; 
-    }
-    p{
-        font-size: 22px;
-        width: 620px;
-    }
+    align-items: center;  
 }
-.mainHome_ContainerImage{
-    img{
-        width: 290px;
-    }
+.mainHome_ContainerTitles h1{
+        font-size: 46px;   
+}
+.mainHome_ContainerTitles p{
+    font-size: 22px;
+    width: 620px;
+}
+.mainHome_ContainerImage img{
+    width: 290px;
+    
 }
 .mainHome_line{
     width: 162px;
@@ -60,6 +61,7 @@
     background-color: #1C252F;
     color: #D5FF40;
     border-radius: 12px;
+    margin: 20px 0px 20px 0px;
 }
 .buttonLigth{
     display: flex;
@@ -82,4 +84,89 @@
     background-color: #D5FF40;
     border:3px solid #1C252F;
     border-radius: 12px;
+}
+@media (max-width: 768px){
+    .mainHome_ContainerTitles h1{
+        font-size: 32px;   
+    }
+    .mainHome_ContainerTitles p{
+        font-size: 16px;
+        width: 450px;
+    }
+    .mainHome_ContainerImage img{
+        width: 160px;
+        
+    }
+    .mainHome_ContainerDescription{
+        height: 220px;
+        width: 450px;
+    }
+    .buttonDark2{
+        margin: 10px 0px 10px 0px;
+    }
+    .buttonDark{
+        margin: 10px;
+    }
+    .mainHome_line{
+        width: 140px;
+        height: 3px;
+    }
+
+}
+@media (max-width: 420px){
+    .mainHome_Container{
+        flex-direction: column;
+    }
+    
+    .mainHome_ContainerTitles h1{
+        font-size: 20px;   
+    }
+    .mainHome_ContainerTitles p{
+        font-size: 14px;
+        width: 280px;
+    }
+    .mainHome_ContainerImage img{
+        width: 160px;
+        
+    }
+    .mainHome_ContainerDescription{
+        height: 220px;
+        width: 270px;
+        text-align: center;
+        
+    }
+    .buttonDark2{
+        height: 24px;
+        width: 24px;
+        border-radius: 8px;
+    }
+    .buttonDark{
+        font-size: 14px;
+        height: 24px;
+        width: 100px;
+        border-radius: 8px;
+    }
+    .buttonLigth{
+        font-size: 14px;
+        height: 24px;
+        width: 100px;
+        border-radius: 8px;
+    }
+    .buttonLigth2{
+        height: 24px;
+        width: 24px;
+        border-radius: 8px;
+    }
+    .mainHome_ContainerButton{
+        margin-top: 20px;
+        width: 280px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+.mainHome_line{
+    width: 120px;
+    height: 2px;
+}
 }
