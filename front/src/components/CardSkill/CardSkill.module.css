@@ -1,6 +1,6 @@
 .cardSkillContainer{
-    height: 220px;
-    width: 180px;
+    height: 16rem;
+    width: 220px;
     background-color: #1C252F;
     border-radius: 12px;
     color: #D5FF40;
@@ -8,11 +8,30 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 2rem;
+}
+@media (max-width: 768px){
+    .cardSkillContainer{
+        height: 12rem;
+        width: 100%;
+    }
+}
+@media (max-width: 420px){
+    .cardSkillContainer{
+        height: 10rem;
+        width: 7rem;
+        margin: 0px;
+    }
+    .cardSkillContainer h4{
+        font-size: 14px;
+    }
 }
 .cardSkillContainer img{
-    height: 100px;
+    height: 100%;
+    width: 120px;
+    padding: 1rem;
 }
 .cardSkillContainer h4{
-        margin-top: 20px;
+    margin: 1rem;
+    width: 140px;
 }

@@ -28,12 +28,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }    
 .cardJobsText h4{
     margin: 4px;
     font-size: 20px;
     text-align: center;
     font-weight: 600;
+    
 }
 .cardJobsText h6{
     font-size: 16px;
@@ -49,10 +51,41 @@
 
 .cardJobsTextImage{
     margin: 5px;
-
+    
 }
 .cardJobsTextImage img{
-
+    
     width: 28px;
     margin: 5px;
+}
+@media (max-width: 768px){
+    .cardJobsImage{
+        width: 180px;
+        height: 140px;
+    } 
+    .cardJobsText h4{
+        font-size: 16px;
+    }
+    .cardJobsText h6{
+        font-size: 14px;
+        margin: 4px;
+    }
+    .cardJobsText p{
+        font-size: 12px;
+    }
+    .cardJobsText{
+        width: 180px;
+        height: 170px;
+    }  
+    .cardJobsTextImage img{
+        width: 22px;
+    }
+    .cardJobsContainer{
+        width:200px;
+    }
+}
+@media (max-width: 420px){
+    .cardJobsContainer{
+        width: 200px;
+    }
 }

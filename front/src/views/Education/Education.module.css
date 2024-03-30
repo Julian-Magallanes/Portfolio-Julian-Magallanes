@@ -3,10 +3,17 @@
     background-color: #1C252F;
     width: 100%;
     height: 100vh;
-    padding: 80px;
-    img{
+    padding: 80px 80px 0px 0px;
+}
+.educationContainer img{
         width: 70rem;
-    }
+        position: absolute;
+}
+.lineChart{
+    height: 90%;
+    position: relative;
+    bottom: -10%;
+    width: 100%;
 }
 
 .education h4{
@@ -24,7 +31,7 @@
     justify-content: center;
     font-size: 16px;
     height: 30px;
-    width: 152px;
+    width: 160px;
     background-color: none;
     background: none;
     color: #D5FF40;
@@ -65,37 +72,92 @@
     flex-direction: row;
     width: 500px;
     flex-wrap: wrap;
+}  
+.educationDeploy a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    height: 30px;
+    width: 200px;
+    background-color: none;
+    background: none;
+    color: #D5FF40;
+    border: #D5FF40 solid 3px;
+    border-radius: 12px;
+    margin: 8px 10px 0px 0px;
+}
+.educationDeploy button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+    background-color: none;
+    background: none;
+    color: #D5FF40;
+    border: #D5FF40 solid 3px;
+    border-radius: 12px;
+    margin: 8px 10px 0px 0px;
+}
     
-        a{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            font-size: 16px;
-            height: 30px;
-            width: 180px;
-            background-color: none;
-            background: none;
-            color: #D5FF40;
-            border: #D5FF40 solid 3px;
-            border-radius: 12px;
-            margin: 8px 10px 0px 0px;
-            }
-            button{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 16px;
-                height: 30px;
-                width: 30px;
-                background-color: none;
-                background: none;
-                color: #D5FF40;
-                border: #D5FF40 solid 3px;
-                border-radius: 12px;
-                margin: 8px 10px 0px 0px;
-            }
     
     
-    
+@media (max-width: 768px){
+    .educationContainer{
+        display: flex;
+        align-items: center;
+    }
+    .educationContainer img{
+        padding-right:80px ;
+}
+
+.educationDeploy a{
+    font-size: 14px;
+    width: 160px;
+}
+.educationDeploy button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+}
+.educationDeploy{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    flex-wrap: wrap;
+}  
+
+}
+@media (max-width: 420px){
+    .educationContainer img{
+        display: none;
+}
+.educationCardRigth{
+    text-align: start;
+    align-items: start;
+}
+.educationDeploy a{
+    font-size: 14px;
+    width: 160px;
+}
+.educationDeploy button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+}
+.educationDeploy{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    flex-wrap: wrap;
+}  
 }

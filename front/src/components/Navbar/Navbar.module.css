@@ -25,6 +25,13 @@
         font-size: 20px;
         font-weight: 400;
         cursor: pointer;
+        transition: 0.3s
+}
+.nabvar_ContainerList li:hover{
+    scale: 1.1;
+}
+.nabvar_ContainerList li:hover ~  li{
+    opacity: .1;
 }
 @media (max-width: 768px){
     .nabvar_ContainerList li{

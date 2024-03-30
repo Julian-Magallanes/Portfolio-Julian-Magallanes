@@ -27,13 +27,36 @@ const Skills = () => {
             console.error('Error fetching jobs:', error);
         });
     }, []);
+
+    const [sliderClass, setSliderClass] = useState('slider-item-show5');
+
+  useEffect(() => {
+    function handleResize() {
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 768) {
+        setSliderClass('slider-item-show3');
+      } else if (screenWidth < 420) {
+        setSliderClass('slider-item-show2');
+      } else {
+        setSliderClass('slider-item-show5');
+      }
+    }
+
+    // Llama a la función handleResize cuando cambia el tamaño de la pantalla
+    window.addEventListener('resize', handleResize);
+
+    // Limpia el event listener cuando el componente se desmonta
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
     return(
         
     <div className={style.skillsContainer} id="Skills">
         <div>
             <h1>Tecnologias Conocidas</h1>
             <p>Estas son utilizadas en todos los proyectos elaborados</p>
-            <div className="swiffy-slider slider-item-show5 slider-nav-outside slider-nav-dark slider-nav-sm slider-nav-visible slider-nav-page slider-item-snapstart slider-nav-autoplay slider-nav-autopause slider-item-ratio-contain slider-item-ratio-32x9py-3 py-lg-4" data-slider-nav-autoplay-interval="2000" id="sliderSkils">
+            <div className={`swiffy-slider slider-nav-outside slider-nav-dark  slider-nav-visible slider-nav-page slider-item-snapstart slider-nav-autoplay slider-nav-autopause slider-item-ratio-contain  ${sliderClass}`} id="sliderSkils">
                 <div className="slider-container" id="sliderContainerSkils">
                     {skills.map((tecnology) => {
                         return <CardSkill key={tecnology?.id} tecnology={tecnology}/>

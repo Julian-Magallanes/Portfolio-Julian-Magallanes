@@ -56,6 +56,7 @@ a.active {
   
   font-weight: 600;
 }
+
 @media (max-width: 768px){
   a {
     padding: 0px 10px 0px 10px;
@@ -76,36 +77,112 @@ p{
 }
 #autodidacta{
   position: absolute;
-  right: 24rem;
-  top: calc(300vh + 20rem);
+  right: 28%;
+  top: calc(300vh + 40%);
 }
 #henry{
   position: absolute;
-  right: 62rem;
-  top: calc(300vh + 16rem);
+  right: 62%;
+  top: calc(300vh + 32%);
 }
 #coderhause{
   position: absolute;
-  right: 44em;
-  top: calc(300vh + 28em);
+  right: 46%;
+  top: calc(300vh + 58%);
 }
 #universidad{
   position: absolute;
-  right: 64em;
-  top: calc(300vh + 44rem);
+  right: 64%;
+  top: calc(300vh + 84%);
 }
 #sliderSkils{
-  height: 500px;
+  height: 400px;
   display: flex;
   align-items: center;
+  align-content: center;
   background-color: transparent;
-  width: 150vh;
+  width: 68rem;
 }
+@media (max-width: 1440px){
+  #autodidacta{
+    right: 14%;
+  }
+  #henry{
+    right: 56%;
+  }
+  #coderhause{
+    right: 34%;
+  }
+  #universidad{
+    right: 58%;
+  }
+}
+@media (max-width: 768px){
+  #sliderSkils{
+    width: 32rem;
+  }
+  .swiffy-slider{
+    --swiffy-slider-item-count:1.5
+  }
+  #autodidacta{
+    position: absolute;
+    right: -6%;
+    top: calc(300vh + 46%);
+  }
+  #henry{
+    position: absolute;
+    right: 46%;
+    top: calc(300vh + 32%);
+  }
+  #coderhause{
+    position: absolute;
+    right: 14%;
+    top: calc(300vh + 58%);
+  }
+  #universidad{
+    position: absolute;
+    right: 52%;
+    top: calc(300vh + 76%);
+  }
+  
+}
+@media (max-width: 420px){
+  #sliderSkils{
+    width: 19rem;
+  }
+ 
+  .swiffy-slider{
+    --swiffy-slider-item-count:none
+  }
+  #autodidacta{
+    position: static;
+    margin: 40px 0px 0px 20px;
+  }
+  #henry{
+    position: static;
+    margin: 40px 0px 0px 20px;
+  }
+  #coderhause{
+    position: static;
+    margin: 40px 0px 0px 20px;
+
+  }
+  #universidad{
+    position: static;
+    margin: 40px 0px 0px 20px;
+  }
+
+}
+
+
 #sliderContainerSkils{
-  height: 320px;
-  width: 100%;
+  height: 20rem;
+  display: flex;
+  align-content: center;
+
 }
 .slider-nav{
-  margin: -10%;
+  margin: -5%;
 }
+
 
