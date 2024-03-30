@@ -33,8 +33,8 @@ const Skills = () => {
         <div>
             <h1>Tecnologias Conocidas</h1>
             <p>Estas son utilizadas en todos los proyectos elaborados</p>
-            <div className="swiffy-slider slider-item-show5 slider-nav-outside slider-nav-dark slider-nav-sm slider-nav-visible slider-nav-page slider-item-snapstart slider-nav-autoplay slider-nav-autopause slider-item-ratio-contain slider-item-ratio-32x9py-3 py-lg-4" data-slider-nav-autoplay-interval="2000">
-                <div className="slider-container">
+            <div className="swiffy-slider slider-item-show5 slider-nav-outside slider-nav-dark slider-nav-sm slider-nav-visible slider-nav-page slider-item-snapstart slider-nav-autoplay slider-nav-autopause slider-item-ratio-contain slider-item-ratio-32x9py-3 py-lg-4" data-slider-nav-autoplay-interval="2000" id="sliderSkils">
+                <div className="slider-container" id="sliderContainerSkils">
                     {skills.map((tecnology) => {
                         return <CardSkill key={tecnology?.id} tecnology={tecnology}/>
                     })

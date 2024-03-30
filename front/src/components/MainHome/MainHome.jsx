@@ -21,7 +21,7 @@ const MainHome = () => {
         </div>
         <div className={style.mainHome_ContainerDescription}>
             <div className={style.mainHome_ContainerTitles}>
-                <h1>Hola soy Julian Magallanes.  </h1>
+                <span className={style.textTitle}>Hola soy Julian Magallanes.  </span>
                 <div className={style.mainHome_line}></div>
                 <p>Soy full Stack Developer, especializado en el Frontend de las aplicaciones web. Me gusta el trabajo en equipo, creo que los proyectos en conjunto llegan a mejores resultados.</p>
             </div>

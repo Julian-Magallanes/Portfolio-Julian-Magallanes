@@ -14,8 +14,34 @@
     flex-direction: column;
     align-items: center;  
 }
-.mainHome_ContainerTitles h1{
-        font-size: 46px;   
+.textTitle {
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 46px;
+    width: 22ch;
+    border-right: #1C252F solid 4px;
+    overflow: hidden;
+     /* Animación principal: escribir el texto */
+     animation: typing 2s steps(27) forwards, 
+     blink 2s infinite step-end alternate; /* Animación de parpadeo */
+
+/* Establecer la dirección de la animación */
+    animation-direction: alternate; /* Hacer que la animación vaya hacia adelante y hacia atrás */
+
+/* Establecer que el borde desaparezca al final de la animación */
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {
+        width: 22ch; /* Ancho final del texto */
+        border-right-color: transparent; /* Hacer que el borde derecho sea transparente al final */
+    }
+}
+@keyframes blink {
+    50% {background-color: transparent;}
 }
 .mainHome_ContainerTitles p{
     font-size: 22px;
@@ -86,7 +112,7 @@
     border-radius: 12px;
 }
 @media (max-width: 768px){
-    .mainHome_ContainerTitles h1{
+    .textTitle{
         font-size: 32px;   
     }
     .mainHome_ContainerTitles p{
@@ -118,7 +144,7 @@
         flex-direction: column;
     }
     
-    .mainHome_ContainerTitles h1{
+    .textTitle{
         font-size: 20px;   
     }
     .mainHome_ContainerTitles p{

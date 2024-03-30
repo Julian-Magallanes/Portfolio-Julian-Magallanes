@@ -11,14 +11,28 @@
     border: #D5FF40 solid 3px;
     border-radius: 12px;
     margin: 20px;
+    
+}
+.aboutMeSection1:hover{
+    opacity: 0.6;
+    cursor: pointer;
 }
 .aboutMeSection1 p{
-    font-family: 22px;
+    font-size: 14px;
     margin-left: 380px;
+    text-align: center;
+    padding: 40px;
+}
+.aboutMeSection1 h4{
+    font-size: 22px;
+    margin-left: 380px;
+    text-align: center;
+    padding: 60px;
 }
 .aboutMeSection1 img{
     width: 380px;
     position: absolute;
+    z-index: 1;
 }
   
 
@@ -30,6 +44,7 @@
     width: 100%;
     margin: 20px;
 }
+
 .grid1 {
     margin: 20px 20px 20px 0px;
     width: 100%;
@@ -38,10 +53,20 @@
     border-radius: 12px;
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+.grid1:hover{
+    opacity: 0.6;
+    cursor: pointer;
 }
 .grid1 p{
     text-align: center;
+    font-size: 14px;
+}
+.grid1 h4{
+    text-align: center;
+    font-size: 22px;
 }
 
 .grid2 {
@@ -51,18 +76,34 @@
     border: #D5FF40 solid 3px;
     border-radius: 12px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
 }
+.grid2:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
 .grid2 img{
-    width: 320px;
+    width: 280px;
     position: relative;
-    bottom: 50%;
-    right:  10%;
+    bottom: 30%;
+    right:  30%;
+    text-align: start;
 }
 .grid2 p{
+    font-size: 14px;
+    position: relative;
+    bottom: 24%;
     text-align: center;
 }
+.grid2 h4{
+    font-size: 22px;
+    position: relative;
+    bottom: 18%;
+    text-align: center;
+}
+
 
 .aboutMeSection3{
     width: 100%;
@@ -72,20 +113,48 @@
     margin: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.aboutMeSection3:hover{
+    opacity: 0.6;
+    cursor: pointer;
 }
 .aboutMeSection3 p{
-    font-family: 22px;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px;
+}
+.aboutMeSection3 h4{
+    font-size: 22px;
 }
 .aboutMeSection3 img{
     height:  280px;
-    position: relative;  
+    position: relative; 
+
+}
+@media (max-width: 1440px){
+    .aboutMeSection3 img{
+        bottom: -40%;
+    }
 }
 @media (max-width: 768px){
+    .aboutMeSection3 img{
+        bottom: 0%;
+    }
     .aboutMeContainer{
         padding: 140px 120px 60px 60px;
     }
     .aboutMeSection1 img{
-        width: 320px;
+        width: 280px;
+    }
+    .aboutMeSection1 p{
+        padding: 10px;
+        margin-left: 45%;
+    }
+    .aboutMeSection1 h4{
+        padding: 10px;
+        margin-left: 45%;
+        margin-top: 10%;
     }
     .grid1 {
 
@@ -94,6 +163,12 @@
     .grid2 {
         height: 340px;
         flex-direction: column;
+    }
+    .grid2 h4{
+        margin-top: 50%;
+    }
+    .grid2 img{
+        bottom: 25%;
     }
     .aboutMeSection3{
         height: 200px;
@@ -106,35 +181,73 @@
 @media (max-width: 420px){
     .aboutMeContainer{
         padding: 80px 40px 20px 20px;
+        
+        
     }
     .aboutMeSection2{
         flex-direction: column;
-        margin: 10px 0px 10px 0px;
-    }
-    .aboutMeSection1 img{
-        width: 180px;
-    }
-    .grid1 {
-        margin: 10px 0px 10px 0px;
-        height: 140px;
-    }
-    .grid2 {
-        height: 140px;
-        margin: 10px 0px 10px 0px;
-    }
-    .grid2 img{
-        width: 200px;
-    }
-    .aboutMeSection3{
-        height: 180px;
         margin: 10px 0px 10px 0px;
     }
     .aboutMeSection1{
         height: 200px;
         margin: 10px 0px 10px 0px;
     }
+    .aboutMeSection1 p{
+        font-size: 12px;
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+    .aboutMeSection1 img{
+        width: 140px;
+    }
+    .aboutMeSection1 h4{
+        font-size: 16px;
+        margin-left: 0px;
+        margin-top: 86px;
+    }
+    .grid1 {
+        margin: 10px 0px 10px 0px;
+        height: 140px;
+    }
+    .grid1 h4{
+        font-size: 16px;
+    }
+    .grid1 p{
+        font-size: 12px;
+    }
+    .grid2 {
+        height: 140px;
+        margin: 10px 0px 10px 0px;
+        padding: 10px;
+    }
+    .grid2 img{
+        width: 140px;
+        bottom: 40%;
+        right:  40%;
+    }
+    .grid2 h4{
+        margin-top: 4%;
+        font-size: 16px;
+    }
+    .grid2 p{
+        font-size: 12px;
+        bottom: 50%;
+    }
+    .aboutMeSection3{
+        height: 180px;
+        margin: 10px 0px 10px 0px;
+    }
+    .aboutMeSection3 h6{
+        font-size: 16px;
+    }
     .aboutMeSection3 img{
-        height:  180px;
+        height:  120px;
+        bottom: -18%;
+    }
+    .aboutMeSection3 p{
+        font-size: 12px;
+        margin: 0;
+        margin-right: 8px;
     }
 
 }

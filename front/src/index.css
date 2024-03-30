@@ -46,18 +46,22 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+  padding: 0px 24px 0px 24px;
 }
 a.active {
   text-decoration: none;
   color: inherit;
   border: 2px solid ;
   border-radius: 12px;
-  padding: 0px 40px 0px 40px;
+  
   font-weight: 600;
 }
 @media (max-width: 768px){
+  a {
+    padding: 0px 10px 0px 10px;
+  }
   a.active {
-    padding: 0px 20px 0px 20px;
+    border-radius: 8px;
   }
 }
 button {
@@ -90,19 +94,18 @@ p{
   right: 64em;
   top: calc(300vh + 44rem);
 }
-.swiffy-slider{
+#sliderSkils{
   height: 500px;
   display: flex;
   align-items: center;
   background-color: transparent;
   width: 150vh;
 }
-.slider-container{
+#sliderContainerSkils{
   height: 320px;
   width: 100%;
 }
 .slider-nav{
-  margin: -60px;
+  margin: -10%;
 }
-
 

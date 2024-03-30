@@ -53,7 +53,8 @@ const ScrollBars = () => {
                 smooth={true}  
                 duration={1000} 
                 onClick={handleSetActive}
-                activeStyle={{border:"none", padding:"0px"}}
+                style={{padding:"24px"}}
+                activeStyle={{border:"none", padding:"24px"}}
                 
                 >
                 <button type="button" className={style.scrollBars} style={{ color: formColor, background: formColor }}/>
@@ -66,7 +67,8 @@ const ScrollBars = () => {
                 smooth={true}  
                 duration={1000} 
                 onClick={handleSetActive}
-                activeStyle={{border:"none", padding:"0px"}}
+                style={{padding:"24px"}}
+                activeStyle={{border:"none", padding:"24px"}}
                 >
                 <button type="button" className={style.scrollBars} style={{ color: formColor, background: formColor }}/>
                 </Link>
@@ -78,7 +80,8 @@ const ScrollBars = () => {
                 smooth={true}  
                 duration={1000} 
                 onClick={handleSetActive}
-                activeStyle={{border:"none", padding:"0px"}}
+                style={{padding:"24px"}}
+                activeStyle={{border:"none", padding:"24px"}}
                 >
                 <button type="button" className={style.scrollBars} style={{ color: formColor, background: formColor }}/>
                 </Link>
@@ -90,7 +93,8 @@ const ScrollBars = () => {
                 smooth={true}  
                 duration={1000} 
                 onClick={handleSetActive}
-                activeStyle={{border:"none", padding:"0px"}}
+                style={{padding:"24px"}}
+                activeStyle={{border:"none", padding:"24px"}}
                 >
                 <button type="button" className={style.scrollBars} style={{ color: formColor, background: formColor }}/>
                 </Link>
@@ -102,7 +106,8 @@ const ScrollBars = () => {
                 smooth={true}  
                 duration={1000} 
                 onClick={handleSetActive}
-                activeStyle={{border:"none", padding:"0px"}}
+                style={{padding:"24px"}}
+                activeStyle={{border:"none", padding:"24px"}}
 
                 >
                 <button type="button" className={style.scrollBars} style={{ color: formColor, background: formColor }}/>

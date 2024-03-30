@@ -9,7 +9,7 @@ const CardJobs = (props) => {
     return(
     <div className={style.cardJobsContainer}>
         <div className={style.cardJobsImage}>
-            <img src={urlImage} alt="imageJobs" />
+            <img src={urlImage} alt="imageJobs" loading="lazy" />
         </div>
         <div className={style.cardJobsText}> 
             <h4>{title}</h4>
