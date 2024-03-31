@@ -1,27 +1,35 @@
 .cardJobsContainer{
-    height: 360px;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(0,0,0,0.1),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    border-radius: 12px;
 }
-
+.cardJobsContainer:hover{
+    scale: 1.05;
+}
 .cardJobsImage{
     background-color: aliceblue;
-    width: 290px;
-    height: 200px;
+    height: 50%;
     border-radius: 12px 12px 0px 0px ;
     display: flex;
     align-items: center;
     align-content: center;
-    padding:  10px;
-    border: #1C252F solid 2px;
+    justify-content: center;
+
+
+    overflow: hidden; /* Esto evita que la imagen se desborde del contenedor */
 }
 .cardJobsImage img{
-    width: 290px;
-    object-fit: cover;
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+  display: block;
 }
 
 
 .cardJobsText{
-    width: 290px;
-    height: 160px;
+    height: 50%;
     background-color: #1C252F;
     border-radius: 0px 0px 12px 12px ;
     color: #D5FF40;
@@ -58,11 +66,7 @@
     width: 28px;
     margin: 5px;
 }
-@media (max-width: 768px){
-    .cardJobsImage{
-        width: 180px;
-        height: 140px;
-    } 
+@media (max-width: 1320px){
     .cardJobsText h4{
         font-size: 16px;
     }
@@ -73,19 +77,16 @@
     .cardJobsText p{
         font-size: 12px;
     }
-    .cardJobsText{
-        width: 180px;
-        height: 170px;
-    }  
+  
     .cardJobsTextImage img{
         width: 22px;
     }
-    .cardJobsContainer{
-        width:200px;
-    }
 }
 @media (max-width: 420px){
-    .cardJobsContainer{
-        width: 200px;
+    .cardJobsText{
+        height: 60%;
+    }
+    .cardJobsImage{
+        height: 40%;
     }
 }

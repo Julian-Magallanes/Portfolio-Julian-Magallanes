@@ -14,7 +14,7 @@
     
 }
 .aboutMeSection1:hover{
-    opacity: 0.6;
+    scale: 1.05;
     cursor: pointer;
 }
 .aboutMeSection1 p{
@@ -34,9 +34,6 @@
     position: absolute;
     z-index: 1;
 }
-  
-
-
 .aboutMeSection2{
     display: flex;
     flex-direction: row;
@@ -57,7 +54,7 @@
     justify-content: center;
 }
 .grid1:hover{
-    opacity: 0.6;
+    scale: 1.05;
     cursor: pointer;
 }
 .grid1 p{
@@ -81,7 +78,7 @@
     padding: 20px;
 }
 .grid2:hover{
-    opacity: 0.6;
+    scale: 1.05;
     cursor: pointer;
 }
 .grid2 img{
@@ -116,7 +113,7 @@
     justify-content: center;
 }
 .aboutMeSection3:hover{
-    opacity: 0.6;
+    scale: 1.05;
     cursor: pointer;
 }
 .aboutMeSection3 p{
@@ -132,15 +129,48 @@
     position: relative; 
 
 }
-@media (max-width: 1440px){
-    .aboutMeSection3 img{
-        bottom: -40%;
+
+@media (max-width: 1220px){
+    .aboutMeSection1 img{
+        width: 340px;
+    }
+    .aboutMeSection1 p{
+        margin-left: 300px;
+        padding: 20px;
+    }
+    .grid2 img{
+        width: 220px;
+        position: relative;
+        bottom: 30%;
+        right:  30%;
+        text-align: start;
+    }
+    .grid2 p{
+        bottom: 24%;
     }
 }
-@media (max-width: 768px){
-    .aboutMeSection3 img{
-        bottom: 0%;
+@media (max-width: 1130px){
+    .aboutMeSection1 img{
+        width: 260px;
     }
+    .aboutMeSection1 p{
+        margin-left: 260px;
+    }
+    .grid2 img{
+        width: 180px;
+        bottom: 36%;
+        right:  30%;
+        text-align: start;
+    }
+    .grid2 p{
+        bottom: 34%;
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 768px){
+
     .aboutMeContainer{
         padding: 140px 120px 60px 60px;
     }
@@ -161,17 +191,21 @@
         height: 340px;
     }
     .grid2 {
-        height: 340px;
+        height: 360px;
         flex-direction: column;
     }
     .grid2 h4{
         margin-top: 50%;
     }
     .grid2 img{
-        bottom: 25%;
+        bottom: 16%;
+    }
+    .grid2 p{
+        bottom: 4%;
     }
     .aboutMeSection3{
         height: 200px;
+
     }
     .aboutMeSection1{
         height: 200px;
@@ -242,7 +276,6 @@
     }
     .aboutMeSection3 img{
         height:  120px;
-        bottom: -18%;
     }
     .aboutMeSection3 p{
         font-size: 12px;
@@ -250,4 +283,29 @@
         margin-right: 8px;
     }
 
+}
+@media (max-height: 1024px){
+    .aboutMeSection3 img{
+        top: -10%;
+    }
+}
+@media (max-height: 900px){
+    .aboutMeSection3 img{
+        top: 40%;
+    }
+}
+@media (max-height: 844px){
+    .aboutMeSection3 img{
+        top: 36%;
+    }
+}
+@media (max-height: 836px){
+    .aboutMeSection3 img{
+        top: 0%;
+    }
+}
+@media (max-height: 768px){
+    .aboutMeSection3 img{
+        top: -42%;
+    }
 }

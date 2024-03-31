@@ -40,7 +40,7 @@ const ButtonContact = () => {
     };
   }, []);
     return(
-    <div>
+    <div className={style.buttonHover}>
         <Link to="/Contact">
             <div className={style.buttonContactContainer} style={{color:textColor, background:backgroundColor}}>
                 <p>Contactame</p>

@@ -47,17 +47,26 @@ a {
   text-decoration: none;
   color: inherit;
   padding: 0px 24px 0px 24px;
+
 }
 a.active {
   text-decoration: none;
   color: inherit;
   border: 2px solid ;
   border-radius: 12px;
-  
   font-weight: 600;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1260px){
+  a {
+    padding: 0px 12px 0px 12px;
+  }
+  a.active {
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 864px){
   a {
     padding: 0px 10px 0px 10px;
   }
@@ -65,12 +74,7 @@ a.active {
     border-radius: 8px;
   }
 }
-button {
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-  
-}
+
 p{
   text-decoration: none;
   color: inherit;
@@ -103,7 +107,12 @@ p{
   background-color: transparent;
   width: 68rem;
 }
-@media (max-width: 1440px){
+
+#slider2 li{
+  padding:  0px 10px 0px 10px;
+}
+
+@media (max-width: 1560px){
   #autodidacta{
     right: 14%;
   }
@@ -111,19 +120,81 @@ p{
     right: 56%;
   }
   #coderhause{
-    right: 34%;
+    right: 36%;
   }
   #universidad{
-    right: 58%;
+    right: 56%;
   }
 }
-@media (max-width: 768px){
+@media (max-width: 1440px){
+  #autodidacta{
+    right: 10%;
+  }
+  #henry{
+    right: 52%;
+  }
+  #coderhause{
+    right: 30%;
+  }
+  #universidad{
+    right: 54%;
+  }
+}
+@media (max-width: 1340px){
+  #autodidacta{
+    right: 4%;
+  }
+  #henry{
+    right:49%;
+  }
+  #coderhause{
+    right: 26%;
+  }
+  #universidad{
+    right: 50%;
+  }
+}
+@media (max-width: 1260px){
   #sliderSkils{
     width: 32rem;
   }
   .swiffy-slider{
     --swiffy-slider-item-count:1.5
   }
+  #autodidacta{
+    right: -4%;
+  }
+  #henry{
+    right:46%;
+  }
+  #coderhause{
+    right: 20%;
+  }
+  #universidad{
+    right: 44%;
+  }
+}
+@media (max-width: 1160px){
+  
+  #autodidacta{
+    right:-4%;
+    top: calc(300vh + 42%);
+  }
+  #henry{
+    right: 48%;
+    top: calc(300vh + 26%);
+  }
+  #coderhause{
+    right: 20%;
+    top: calc(300vh + 58%);
+  }
+  #universidad{
+    right: 46%;
+    top: calc(300vh + 82%);
+  }
+  
+}
+@media (max-width: 768px){
   #autodidacta{
     position: absolute;
     right: -6%;
@@ -146,7 +217,7 @@ p{
   }
   
 }
-@media (max-width: 420px){
+@media (max-width: 680px){
   #sliderSkils{
     width: 19rem;
   }
@@ -170,6 +241,9 @@ p{
   #universidad{
     position: static;
     margin: 40px 0px 0px 20px;
+  }
+  #slider2 li{
+    width: 186px;
   }
 
 }

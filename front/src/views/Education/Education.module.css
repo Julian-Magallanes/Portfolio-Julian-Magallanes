@@ -9,12 +9,7 @@
         width: 70rem;
         position: absolute;
 }
-.lineChart{
-    height: 90%;
-    position: relative;
-    bottom: -10%;
-    width: 100%;
-}
+
 
 .education h4{
     font-size: 20px;
@@ -39,7 +34,9 @@
     border-radius: 12px;
     margin: 8px 0px 0px 0px;
 }
-    
+.education a:hover{
+    scale: 1.05;
+}
 .education button{
     display: flex;
     align-items: center;
@@ -55,7 +52,9 @@
     margin: 8px 0px 0px 0px;
 
 }
-
+.education button:hover{
+    scale: 1.05;
+}
 .educationCardLeft{
     width: 280px;
     
@@ -105,7 +104,7 @@
     
     
     
-@media (max-width: 768px){
+@media (max-width: 1160px){
     .educationContainer{
         display: flex;
         align-items: center;
@@ -134,7 +133,7 @@
 }  
 
 }
-@media (max-width: 420px){
+@media (max-width: 680px){
     .educationContainer img{
         display: none;
 }

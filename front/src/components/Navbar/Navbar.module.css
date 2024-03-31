@@ -30,10 +30,18 @@
 .nabvar_ContainerList li:hover{
     scale: 1.1;
 }
-.nabvar_ContainerList li:hover ~  li{
-    opacity: .1;
+
+@media (max-width: 1260px){
+    .nabvar_ContainerList li{
+        font-size: 16px;
+    }
+    .nabvar_ContainerSep{
+        width: 40px;
+        height: 38px;
+    }
+
 }
-@media (max-width: 768px){
+@media (max-width: 868px){
     .nabvar_ContainerList li{
         font-size: 15px;
     }
@@ -46,7 +54,7 @@
         padding: 40px 40px 0px 40px;
     }
 }
-@media (max-width: 420px){
+@media (max-width: 680px){
     .nabvar_Container{
         flex-direction: row-reverse;
         align-items: end;

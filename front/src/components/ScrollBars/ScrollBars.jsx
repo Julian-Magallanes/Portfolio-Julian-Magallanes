@@ -53,11 +53,10 @@ const ScrollBars = () => {
                 smooth={true}  
                 duration={1000} 
                 onClick={handleSetActive}
-                style={{padding:"24px"}}
-                activeStyle={{border:"none", padding:"24px"}}
-                
+                style={{padding:"0px", height: "3px"}}
+                activeStyle={{border:"none"}}
                 >
-                <button type="button" className={style.scrollBars} style={{ color: formColor, background: formColor }}/>
+                <button type="button" className={style.scrollBars} style={{ color: formColor, background: formColor }} id="button1"/>
                 </Link>
             </li>
             <li>
@@ -67,10 +66,10 @@ const ScrollBars = () => {
                 smooth={true}  
                 duration={1000} 
                 onClick={handleSetActive}
-                style={{padding:"24px"}}
-                activeStyle={{border:"none", padding:"24px"}}
+                style={{padding:"0px" }}
+                activeStyle={{border:"none"}}
                 >
-                <button type="button" className={style.scrollBars} style={{ color: formColor, background: formColor }}/>
+                <button type="button" className={style.scrollBars} style={{ color: formColor, background: formColor }} id="button2"/>
                 </Link>
             </li>
             <li>
@@ -80,10 +79,10 @@ const ScrollBars = () => {
                 smooth={true}  
                 duration={1000} 
                 onClick={handleSetActive}
-                style={{padding:"24px"}}
-                activeStyle={{border:"none", padding:"24px"}}
+                style={{padding:"0px"}}
+                activeStyle={{border:"none"}}
                 >
-                <button type="button" className={style.scrollBars} style={{ color: formColor, background: formColor }}/>
+                <button type="button" className={style.scrollBars} style={{ color: formColor, background: formColor }} id="button3"/>
                 </Link>
             </li>
             <li>
@@ -93,10 +92,10 @@ const ScrollBars = () => {
                 smooth={true}  
                 duration={1000} 
                 onClick={handleSetActive}
-                style={{padding:"24px"}}
-                activeStyle={{border:"none", padding:"24px"}}
+                style={{padding:"0px"}}
+                activeStyle={{border:"none"}}
                 >
-                <button type="button" className={style.scrollBars} style={{ color: formColor, background: formColor }}/>
+                <button type="button" className={style.scrollBars} style={{ color: formColor, background: formColor }} id="button4"/>
                 </Link>
             </li>
             <li>
@@ -106,11 +105,11 @@ const ScrollBars = () => {
                 smooth={true}  
                 duration={1000} 
                 onClick={handleSetActive}
-                style={{padding:"24px"}}
-                activeStyle={{border:"none", padding:"24px"}}
+                style={{padding:"0px"}}
+                activeStyle={{border:"none"}}
 
                 >
-                <button type="button" className={style.scrollBars} style={{ color: formColor, background: formColor }}/>
+                <button type="button" className={style.scrollBars} style={{ color: formColor, background: formColor }} id="button5"/>
                 </Link>
             </li>
         </ul>

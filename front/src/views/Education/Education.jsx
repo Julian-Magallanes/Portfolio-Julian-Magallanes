@@ -1,27 +1,8 @@
 import React, { useState } from "react";
 import style from "./Education.module.css"
 import imageEducation from "../../assets/Group.png"
-import LineChart from "../../components/LineChart/LineChart";
 const Education = () => {
     const [deploy, setDeploy] = useState(false)
-    
-    {/*const data = [
-        { x: 0, y: 0 },
-        { x: 18, y: 8},
-        { x: 28, y: 32 },
-        { x: 40, y: 44 },
-        { x: 48, y: 66 },
-        { x: 64, y: 72 },
-        { x: 72, y: 85 }
-      ];
-      
-      const goals = [
-        { x: 18, y: 8},
-        { x: 40, y: 44 },
-        { x: 48, y: 66 },
-        { x: 64, y: 72 }
-      ];
-    */}
     const handleDeploy = () => {
         if(deploy===false){
             setDeploy(true)
@@ -35,9 +16,6 @@ const Education = () => {
     return(
     <div className={style.educationContainer} id="Education">
         <img src={imageEducation} alt="imageEducation" />
-        {/*<div className={style.lineChart}>
-          <LineChart data={data} goals={goals} />
-        </div>*/}
         <div className={style.education}>
             <div className={style.educationCardLeft} id="universidad">
                 <h4>

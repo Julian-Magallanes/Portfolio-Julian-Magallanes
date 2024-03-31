@@ -4,33 +4,36 @@
     align-items: center;
     position: fixed;
     right: 0;
-    bottom: 20vh;
-
-    
+    bottom: 14vh;   
 }
 
 .scrollBars{
-    width: 35px;
+    width: 100%;
+    border: none;
     height: 3px;
-    background-color: #1C252F;
-
 }
+
 .scrollBarsY{
     height: 360px;
     width: 3px;
     background-color: #1C252F;
     margin-top: 50px;
-    
+}
+.scrollContainer li{
+    width: 35px;
+    border: none;
+}
+.scrollContainer li:hover{
+    scale: 1.1;
+    cursor: pointer;
 }
 .scrollText{
     transform: rotate(-90deg);
-    h4{
+}
+.scrollText h4{
         font-size: 22px;
         width: 96px;
-    }
 }
-a{color: blueviolet;}
-
 @media (max-width: 420px){
     .scrollContainer{
         display: none;
