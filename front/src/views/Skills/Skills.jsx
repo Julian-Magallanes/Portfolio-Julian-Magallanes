@@ -9,7 +9,7 @@ import "bootstrap/dist/js/bootstrap"
 window.addEventListener("load", () => {
     window.swiffyslider.init();
 });
-
+const api = import.meta.env.VITE_API_URL
 // import Swiffy Slider CSS
 import "swiffy-slider/css"
 
@@ -18,7 +18,7 @@ const Skills = () => {
     
     useEffect(() => {
         axios
-        .get("http://localhost:3002/skills")
+        .get(`${api}/skills`)
         .then((response) => {
             setSkills(response.data);
             console.log(response.data); 

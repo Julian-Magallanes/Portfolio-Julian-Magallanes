@@ -9,7 +9,7 @@ import "bootstrap/dist/js/bootstrap"
 window.addEventListener("load", () => {
     window.swiffyslider.init();
 });
-
+const api = import.meta.env.VITE_API_URL
 // import Swiffy Slider CSS
 import "swiffy-slider/css"
 const Jobs = () => {
@@ -17,7 +17,7 @@ const Jobs = () => {
 
     useEffect(() => {
         axios
-        .get("http://localhost:3002/jobs")
+        .get(`${api}/jobs`)
         .then((response) => {
             setJobs(response.data);
             console.log(response.data); 
