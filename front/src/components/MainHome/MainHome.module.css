@@ -48,7 +48,7 @@
     width: 620px;
 }
 .mainHome_ContainerImage img{
-    height:  320px;
+    width:  320px;
     border-radius: 50%;
     border:#1C252F solid 6px
 }

@@ -5,9 +5,10 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 80px;
-    justify-content: space-between;
     padding: 0px 160px 0px 160px;
+    flex-direction: column;
     
 }
 @media (max-width: 1320px){

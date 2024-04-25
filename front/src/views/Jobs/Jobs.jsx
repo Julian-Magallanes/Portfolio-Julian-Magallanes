@@ -29,7 +29,10 @@ const Jobs = () => {
     }, []);
 
     return (
+
         <div className={style.jobsContainer} id="Jobs">
+            <h1>Tecnologias Conocidas</h1>
+            <p>Estas son utilizadas en todos los proyectos elaborados</p>
             <div className="swiffy-slider slider-item-show3 slider-item-reveal slider-nav-dark slider-nav-outside-expand">
                 <ul className="slider-container py-4" id="slider2">
             {jobs.map((pages) => {
