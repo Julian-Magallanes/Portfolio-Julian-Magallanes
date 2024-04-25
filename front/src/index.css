@@ -111,7 +111,20 @@ p{
 #slider2 li{
   padding:  0px 10px 0px 10px;
 }
-
+@media (min-width: 1680px){
+  #autodidacta{
+    right: 32%;
+  }
+  #henry{
+    right: 66%;
+  }
+  #coderhause{
+    right: 50%;
+  }
+  #universidad{
+    right: 70%;
+  }
+}
 @media (max-width: 1560px){
   #autodidacta{
     right: 14%;
