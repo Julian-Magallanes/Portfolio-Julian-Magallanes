@@ -1,5 +1,6 @@
 const app = require ("./src/server.js")
 const dbConfig = require("./src/config/dbConfig.js")
+const { config } = require("dotenv")
 const puerto = process.env.PORT || 3002;
 
 dbConfig().then(
