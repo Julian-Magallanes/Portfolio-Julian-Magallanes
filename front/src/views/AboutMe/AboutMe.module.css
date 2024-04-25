@@ -223,7 +223,7 @@
         margin: 10px 0px 10px 0px;
     }
     .aboutMeSection1{
-        height: 200px;
+        height: 27%;
         margin: 10px 0px 10px 0px;
     }
     .aboutMeSection1 p{
@@ -241,7 +241,7 @@
     }
     .grid1 {
         margin: 10px 0px 10px 0px;
-        height: 140px;
+        height: 20%;
     }
     .grid1 h4{
         font-size: 16px;
@@ -250,7 +250,7 @@
         font-size: 12px;
     }
     .grid2 {
-        height: 140px;
+        height: 20%;
         margin: 10px 0px 10px 0px;
         padding: 10px;
     }
@@ -268,7 +268,7 @@
         bottom: 50%;
     }
     .aboutMeSection3{
-        height: 180px;
+        height: 27%;
         margin: 10px 0px 10px 0px;
     }
     .aboutMeSection3 h6{

@@ -87,6 +87,8 @@
 @media (max-width: 420px){
     .cardJobsText{
         height: 60%;
+        padding-bottom: 0px;
+        padding-top: 0px;
     }
     .cardJobsImage{
         height: 40%;
