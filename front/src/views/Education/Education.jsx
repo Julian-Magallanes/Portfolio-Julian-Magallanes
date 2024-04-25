@@ -54,10 +54,10 @@ const Education = () => {
                 <h6> 
                     <div><i>FullStack Developer</i></div>
                     Javascript - Tipescript- React.js
-                    Node.js - Mongo DB - Progrest 
-                    -Next.js - Nest/js 
+                    Node. - Express - Taildwind - MongoDB - ProgresSQL
+                    -Next.js
                 </h6>
-                <a href="./" rel="noopener" target="_blank">CERTIFICADO</a>
+                {/*<a href="./" rel="noopener" target="_blank">CERTIFICADO</a>*/}
             </div>
             <div className={style.educationCardLeft} id="autodidacta">
                 <h4>

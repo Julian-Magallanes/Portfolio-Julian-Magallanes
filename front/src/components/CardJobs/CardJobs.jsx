@@ -17,7 +17,11 @@ const CardJobs = (props) => {
             <p>{skills}</p>
             <div className={style.cardJobsTextImage}>
                 <a href={urlGitHub} rel="noopener"target="_blank"><img src={imageGitHub} alt="imageGitHub" /></a>
-                <a href={urlPage} rel="noopener" target="_blank"><img src={imageShare} alt="imageShare" /></a>
+                {urlPage !== " " ? (
+                        <a href={urlPage} rel="noopener" target="_blank">
+                            <img src={imageShare} alt="imageShare" />
+                        </a>
+                    ) : null}
             </div>
         </div>
     </div>

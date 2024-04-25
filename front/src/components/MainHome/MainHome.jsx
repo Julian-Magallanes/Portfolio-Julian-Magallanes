@@ -17,7 +17,7 @@ const MainHome = () => {
     return(
     <div className={style.mainHome_Container}>
         <div className={style.mainHome_ContainerImage}>
-            <img src={imageProfile} alt="imageProfile" />
+            <img src="https://res.cloudinary.com/dzxrc9b6o/image/upload/v1714054099/Portfolio/Tecnologias/profile_2_pvpomz.jpg" alt="imageProfile" />
         </div>
         <div className={style.mainHome_ContainerDescription}>
             <div className={style.mainHome_ContainerTitles}>
@@ -31,7 +31,7 @@ const MainHome = () => {
                 <>
                 <a href="https://github.com/Julian-Magallanes" rel="noopener" target="_blank" className={style.buttonDark} style={window.innerWidth <= 420 ? { marginLeft: "0" } : {}}>GitHub</a>
                 <a href="https://www.linkedin.com/in/juli%C3%A1n-magallanes-2b074a187/" rel="noopener" target="_blank" className={style.buttonLigth}>Linkedln</a>
-                <a href="https://drive.google.com/file/d/102D9Xdrinpob5NAu2kn2oyWXw4ePZCsG/view?usp=drive_link" rel="noopener" target="_blank" className={style.buttonLigth}>Curriculum</a>
+                <a href="https://drive.google.com/file/d/1hu0DqBgDpiouK0CLzj7mTvvN_O5llKTn/view?usp=sharing" rel="noopener" target="_blank" className={style.buttonLigth}>Curriculum</a>
                 <a href="https://wa.me/542613012708" rel="noopener" target="_blank" className={style.buttonDark} style={window.innerWidth <= 420 ? { marginRight: "0" } : {}}>Whatsapp</a>
                 <button className={style.buttonLigth2} onClick={handleDismantle} style={window.innerWidth <= 420 ? { display: "none" } : {}}>-</button>
                 </>
