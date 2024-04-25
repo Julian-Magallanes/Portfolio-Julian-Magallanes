@@ -4,6 +4,7 @@ import CardJobs from "../../components/CardJobs/CardJobs";
 import axios from "axios";
 import { swiffyslider } from 'swiffy-slider'
 window.swiffyslider = swiffyslider;
+
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap"
 window.addEventListener("load", () => {
