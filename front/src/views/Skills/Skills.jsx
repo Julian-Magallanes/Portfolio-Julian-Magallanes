@@ -12,12 +12,15 @@ window.addEventListener("load", () => {
 const api = import.meta.env.VITE_API_URL
 // import Swiffy Slider CSS
 import "swiffy-slider/css"
+import PortfolioSkill from "../../helper/preloadSkill";
 
 const Skills = () => {
     const [skills, setSkills] = useState([]);
     
     useEffect(() => {
-        axios
+      setSkills(PortfolioSkill)
+        /*axios
+
         .get(`${api}/skills`)
         .then((response) => {
             setSkills(response.data);
@@ -25,7 +28,7 @@ const Skills = () => {
         })
         .catch((error) => {
             console.error('Error fetching jobs:', error);
-        });
+        });*/
     }, []);
 
     const [sliderClass, setSliderClass] = useState('slider-item-show5');
