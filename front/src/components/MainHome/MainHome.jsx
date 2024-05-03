@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./MainHome.module.css"
-import imageProfile from "../../assets/icon.png"
+
 const MainHome = () => {
     const [deploy, setDeploy] = useState(false)
 

@@ -5,7 +5,7 @@ import axios from "axios";
 import { swiffyslider } from 'swiffy-slider'
 window.swiffyslider = swiffyslider;
 import PortfolioJobs from "../../helper/preload";
-
+import imageGitHub from "../../assets/githubDark.svg"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap"
 window.addEventListener("load", () => {
@@ -46,6 +46,8 @@ const Jobs = () => {
                 <button type="button" className="slider-nav" aria-label="Ir al anterior"></button>
                 <button type="button" className="slider-nav slider-nav-next" aria-label="Ir al siguiente"></button>
             </div>
+            <a href="https://github.com/Julian-Magallanes/Portfolio-Julian-Magallanes" rel="noopener"target="_blank" className={style.jobsRepository}><p >Visita el repositorio de este portfolio aca <img src={imageGitHub} alt="imageGitHub" /></p></a>
+
         </div>
     );
 };
