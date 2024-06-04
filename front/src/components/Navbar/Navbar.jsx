@@ -11,6 +11,7 @@ const Navbar = () => {
 
     const [color, setColor] = useState('#1C252F'); // Estado para el color del texto
     const [colorInverse, setColorInverse] = useState('#D5FF40');
+    const [colorContainer, setColorContainer] = useState("linear-gradient(180deg, #D5FF40 55.42%, rgba(199, 255, 0, 0.00) 100%)")
   useEffect(() => {
     // Función para manejar el evento de desplazamiento
     const handleScroll = () => {
@@ -21,7 +22,6 @@ const Navbar = () => {
       if (scrollPosition < windowHeight) {
         setColor("#1C252F");
         setColorInverse("#D5FF40");
-
       } else if (scrollPosition < 2 * windowHeight) {
         setColor("#D5FF40");
         setColorInverse("#1C252F");
@@ -54,7 +54,7 @@ const Navbar = () => {
       setMenuAnimation(!menuAnimation);
     };
     return(
-    <div className={style.nabvar_Container} style={{ color: color, border: color }}>
+    <div className={style.nabvar_Container} style={{ color: color, border: color, background: colorInverse}}>
         <div className={style.nabvar_ContainerSep}></div>
         <div className={style.ToggleIcon} onClick={() => toggleDropdown()}>
             <div className={`${style.NavbarMenuIcon1} ${menuAnimation ? style.Animation : ''}`} style={{ background: menuAnimation ? colorInverse : color }}></div>
