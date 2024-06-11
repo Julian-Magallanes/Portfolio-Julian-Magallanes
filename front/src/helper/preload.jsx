@@ -76,7 +76,25 @@ const PortfolioJobs = () =>{
       " Next "
     ],
     "urlImage": "https://res.cloudinary.com/dzxrc9b6o/image/upload/v1714077853/Next/Sin_t%C3%ADtulo_ppof90.png"
-  }]
+  },
+  {
+    "id": "662ac10b83ca6f4ae55a9898",
+    "title": "ONG - Un Litro de leche Alta Gracia",
+    "description": "Pagina oficial de ONG",
+    "urlGitHub": "https://github.com/ValentinoJCarrero/litro-ong",
+    "urlPage": "https://litro-ong.vercel.app/",
+    "skills": [
+      " Html ",
+      " Nest ",
+      " Postgress ",
+      " Taildwind ",
+      " Astro ",
+      " React ",
+      " Vercel ",
+    ],
+    "urlImage": "https://res.cloudinary.com/dzxrc9b6o/image/upload/v1718065054/Portfolio/trabajos/pagina_ta6r5b.png"
+  }
+]
 }
 export default PortfolioJobs;
 
