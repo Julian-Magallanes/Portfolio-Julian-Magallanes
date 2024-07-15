@@ -31,7 +31,7 @@ const MainHome = () => {
                 <>
                 <a href="https://github.com/Julian-Magallanes" rel="noopener" target="_blank" className={style.buttonDark} style={window.innerWidth <= 420 ? { marginLeft: "0" } : {}}>GitHub</a>
                 <a href="https://www.linkedin.com/in/juli%C3%A1n-magallanes-2b074a187/" rel="noopener" target="_blank" className={style.buttonLigth}>Linkedln</a>
-                <a href="https://drive.google.com/file/d/1hu0DqBgDpiouK0CLzj7mTvvN_O5llKTn/view?usp=sharing" rel="noopener" target="_blank" className={style.buttonLigth}>Curriculum</a>
+                <a href="https://drive.google.com/file/d/1qqwlBmmD4hBEeEg3CHmNxdhDRE3s1DHF/view?usp=drive_link" rel="noopener" target="_blank" className={style.buttonLigth}>Curriculum</a>
                 <a href="https://wa.me/542613012708" rel="noopener" target="_blank" className={style.buttonDark} style={window.innerWidth <= 420 ? { marginRight: "0" } : {}}>Whatsapp</a>
                 <button className={style.buttonLigth2} onClick={handleDismantle} style={window.innerWidth <= 420 ? { display: "none" } : {}}>-</button>
                 </>
