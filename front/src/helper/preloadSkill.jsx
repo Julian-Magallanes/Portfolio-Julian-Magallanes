@@ -58,6 +58,11 @@ const PortfolioSkill = () =>{
       "id":"660736f4ea0c72128a0a71de",
       "urlImage": "https://res.cloudinary.com/dzxrc9b6o/image/upload/v1714052252/Portfolio/Tecnologias/Git-y-Github_k7uwfd.png",
       "title": "Git+GitHub"
+    },
+    {
+      "id":"660736f4ea0c72128a0a71xs",
+      "urlImage": "https://res.cloudinary.com/dzxrc9b6o/image/upload/v1721051004/Portfolio/Tecnologias/astro-logo_znkvio.png",
+      "title": "Astro"
     }]
   }
   export default PortfolioSkill;
